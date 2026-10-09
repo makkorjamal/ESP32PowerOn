@@ -1,0 +1,12 @@
+[Unit]
+Description=Tell ESP32 about PC power state
+After=multi-user.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/python3 /usr/local/bin/pcstate.py on
+ExecStop=/usr/bin/python3 /usr/local/bin/pcstate.py off
+
+[Install]
+WantedBy=multi-user.target
