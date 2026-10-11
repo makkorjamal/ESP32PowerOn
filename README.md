@@ -142,12 +142,12 @@ Look up your motherboard manual
 ### 1. Flash the firmware
 
 1. Install **PlatformIO**
-2. This project is set up for Seeed Xiao ESP32S3 so if you have another board you need to modify platfomio.ini file accordinly 
+2. This project is set up for Seeed Xiao ESP32S3 so if you have another board you need to modify ***platfomio.ini*** file accordinly 
 3. Clone and upload:
 
 ```bash
-git clone https://github.com/<your-user>/esp32-bt-pc-power.git
-cd esp32-bt-pc-power
+git clone https://github.com/makkorjamal/ESP32PowerOn.git
+cd ESP32PowerOn
 pio run -t upload
 ```
 ### Connect to the Esp32 hotspot **AutoConnectAP** and setup
