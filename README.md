@@ -74,41 +74,14 @@ I only tested this on the controller I own, which is an Xbox One controller on a
 
 | # | Image | Part | Qty |
 |---|---|---|---|
-| 1 | <img src="assets/what_you_need_1.png" alt="XIAO ESP32-S3 board with pin labels" width="120"> | [XIAO ESP32-S3](#1-xiao-esp32-s3) | 1 piece with antenna attached |
-| 2 | <img src="assets/what_you_need_3.jpg" alt="USB-C to 9-pin motherboard USB header adapter" width="120"> | [USB-C to 9-pin motherboard adapter](#2-usb-c-to-9-pin-motherboard-adapter) | 1 piece |
-| 3 | <img src="assets/what_you_need_2.jpg" alt="PC817 optocoupler pinout" width="120"> | [Optocoupler PC817](#3-optocoupler-pc817) | 1 piece with soldered claps |
-| 4 | <img src="assets/what_you_need_4.jpg" alt="Male-male jumper cables" width="120"> | [Male-male jumper cables](#4-male-male-jumper-cables) | 2 wires |
-| 5 | <img src="assets/what_you_need_5.jpg" alt="Female-male jumper cables" width="120"> | [Female-male jumper cables](#5-female-male-jumper-cables) | 4 wires |
+| 1 | <img src="assets/what_you_need_1.png" alt="XIAO ESP32-S3 board with pin labels" width="120"> | XIAO ESP32-S3 | 1 piece with antenna attached |
+| 2 | <img src="assets/what_you_need_3.jpg" alt="USB-C to 9-pin motherboard USB header adapter" width="120"> | USB-C to 9-pin motherboard adapter | 1 piece |
+| 3 | <img src="assets/what_you_need_2.jpg" alt="PC817 optocoupler pinout" width="120"> | Optocoupler PC817 | 1 piece with soldered claps |
+| 4 | <img src="assets/what_you_need_4.jpg" alt="Male-male jumper cables" width="120"> | Male-male jumper cables | 2 wires |
+| 5 | <img src="assets/what_you_need_5.jpg" alt="Female-male jumper cables" width="120"> | Female-male jumper cables | 4 wires |
 
-### 1. XIAO ESP32-S3
+- ⚠️ Checkout the assets folder
 
-The tiny microcontroller board (Seeed Studio XIAO ESP32-S3) with Wi-Fi and Bluetooth LE. It has a USB-C port and a **BOOT button (B)**, which this project uses for setup and pairing.
-
-- The board usually ships with **unsoldered pin headers**. Solder them on so it fits the breadboard.
-- Get the version **without** an extra suffix if you only need the basics. The "Sense" version adds a camera and microphone you do not need.
-
-### 2. USB-C to 9-pin motherboard adapter
-
-I used this cable because it stays powered on even if the PC is off. Also the setup is hidden inside the case.
-
-A short cable with a USB-C plug on one end and a **9-pin (2×5) connector** on the other. It plugs onto an internal **USB 2.0 header** on your motherboard and powers the XIAO from the PC.
-
-- The same cable lets you flash the ESP32 from the PC.
-- ⚠️ Connect it **only** to a USB 2.0 header.  Please be careful you might fry your motherboard.
-
-### 3. Optocoupler PC817
-
-A small 4-pin chip with an LED and a light-sensitive transistor inside. The XIAO lights the LED, the transistor connects the two `PWR_SW` pins, and the PC thinks you pressed the power button. There is **no electrical connection** between the two sides, so the motherboard is protected.
-
-### 4. Male-male jumper cables
-
-A pin on both ends. Used on the breadboard to connect the XIAO (GND, D10), and the PC817 (-IN, +IN)
-
-### 5. Female-male jumper cables
-
-A socket on one end and a pin on the other. The **female end slips onto the motherboard's `PWR_SW` pins**, and the **male end goes into the breadboard** at PC817 OUT Pins. You need 2. 
-
----
 
 ## Wiring
 
@@ -117,13 +90,13 @@ A socket on one end and a pin on the other. The **female end slips onto the moth
 
 ### Connections
 
-See the schamtics 
+See the schematics.
 
 > Wake-on-LAN only users can skip all the wiring above.
 
 ### Finding the correct `PWR_SW` pins
 
-Look up your motherboard manual
+Usually in the F-Panel but look up your motherboard manual.
 
 ---
 
@@ -156,7 +129,7 @@ pio run -t upload
 
 </div>
 
-if you need to resetup you need to erase your ESP32 and reflash
+if you want to re-setup you need to erase your ESP32 and reflash
 
 ```bash
 pio run --target erase
