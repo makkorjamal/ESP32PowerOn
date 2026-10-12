@@ -72,17 +72,15 @@ I only tested this on the controller I own, which is an Xbox One controller on a
 
 ## What you need
 
-| # | Part | Qty |
-|---|---|---|
-| 1 | [XIAO ESP32-S3](#1-xiao-esp32-s3) | 1 |
-| 2 | [USB-C to 9-pin motherboard adapter](#2-usb-c-to-9-pin-motherboard-adapter) | 1 |
-| 3 | [Optocoupler PC817](#3-optocoupler-pc817) | 1 |
-| 4 | [Male-male jumper cables](#4-male-male-jumper-cables) | 3 or more |
-| 5 | [Female-male jumper cables](#5-female-male-jumper-cables) | 2 |
+| # | Image | Part | Qty |
+|---|---|---|---|
+| 1 | <img src="assets/what_you_need_1.png" alt="XIAO ESP32-S3 board with pin labels" width="120"> | [XIAO ESP32-S3](#1-xiao-esp32-s3) | 1 |
+| 2 | <img src="assets/what_you_need_3.jpg" alt="USB-C to 9-pin motherboard USB header adapter" width="120"> | [USB-C to 9-pin motherboard adapter](#2-usb-c-to-9-pin-motherboard-adapter) | 1 |
+| 3 | <img src="assets/what_you_need_2.jpg" alt="PC817 optocoupler pinout" width="120"> | [Optocoupler PC817](#3-optocoupler-pc817) | 1 |
+| 4 | <img src="assets/what_you_need_4.jpg" alt="Male-male jumper cables" width="120"> | [Male-male jumper cables](#4-male-male-jumper-cables) | 1 |
+| 5 | <img src="assets/what_you_need_5.jpg" alt="Female-male jumper cables" width="120"> | [Female-male jumper cables](#5-female-male-jumper-cables) | 2 |
 
 ### 1. XIAO ESP32-S3
-
-<img src="assets/what_you_need_1.png" alt="XIAO ESP32-S3 board with pin labels" width="480">
 
 The tiny microcontroller board (Seeed Studio XIAO ESP32-S3) with Wi-Fi and Bluetooth LE. It has a USB-C port and a **BOOT button (B)**, which this project uses for setup and pairing.
 
@@ -90,8 +88,6 @@ The tiny microcontroller board (Seeed Studio XIAO ESP32-S3) with Wi-Fi and Bluet
 - Get the version **without** an extra suffix if you only need the basics. The "Sense" version adds a camera and microphone you do not need.
 
 ### 2. USB-C to 9-pin motherboard adapter
-
-<img src="assets/what_you_need_3.jpg" alt="USB-C to 9-pin motherboard USB header adapter" width="480">
 
 I used this cable because it stays powered on even if the PC is off. Also the setup is hidden inside the case.
 
@@ -102,19 +98,13 @@ A short cable with a USB-C plug on one end and a **9-pin (2×5) connector** on t
 
 ### 3. Optocoupler PC817
 
-<img src="assets/what_you_need_2.jpg" alt="PC817 optocoupler pinout" width="240">
-
 A small 4-pin chip with an LED and a light-sensitive transistor inside. The XIAO lights the LED, the transistor connects the two `PWR_SW` pins, and the PC thinks you pressed the power button. There is **no electrical connection** between the two sides, so the motherboard is protected.
 
 ### 4. Male-male jumper cables
 
-<img src="assets/what_you_need_4.jpg" alt="Male-male jumper cables" width="240">
-
 A pin on both ends. Used on the breadboard to connect the XIAO (GND, D10), and the PC817 (-IN, +IN)
 
 ### 5. Female-male jumper cables
-
-<img src="assets/what_you_need_5.jpg" alt="Female-male jumper cables" width="240">
 
 A socket on one end and a pin on the other. The **female end slips onto the motherboard's `PWR_SW` pins**, and the **male end goes into the breadboard** at PC817 OUT Pins. You need 2. 
 
