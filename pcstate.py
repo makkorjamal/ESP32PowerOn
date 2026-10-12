@@ -3,7 +3,7 @@
 import glob, sys, time
 import serial   # apt install python3-serial
 
-PATTERN = "/dev/serial/by-id/usb-Espressif_USB_JTAG_serial_debug_unit_*"
+PATTERN = "/dev/serial/by-id/usb-Espressif_USB_JTAG_serial_debug_unit_*" # hard coded not ok
 
 def send(msg, retry_seconds):
     deadline = time.time() + retry_seconds
