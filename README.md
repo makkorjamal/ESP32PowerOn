@@ -75,7 +75,7 @@ I only tested this on the controller I own, which is an Xbox One controller on a
 | # | Image | Part | Qty |
 |---|---|---|---|
 | 1 | <img src="assets/what_you_need_1.png" alt="XIAO ESP32-S3 board with pin labels" width="120"> | [XIAO ESP32-S3](#1-xiao-esp32-s3) | 1 piece with antenna attached |
-| 2 | <img src="assets/what_you_need_3.jpg" alt="USB-C to 9-pin motherboard USB header adapter" width="120"> | [USB-C to 9-pin motherboard adapter](#2-usb-c-to-9-pin-motherboard-adapter) | 1 |
+| 2 | <img src="assets/what_you_need_3.jpg" alt="USB-C to 9-pin motherboard USB header adapter" width="120"> | [USB-C to 9-pin motherboard adapter](#2-usb-c-to-9-pin-motherboard-adapter) | 1 piece |
 | 3 | <img src="assets/what_you_need_2.jpg" alt="PC817 optocoupler pinout" width="120"> | [Optocoupler PC817](#3-optocoupler-pc817) | 1 piece with soldered claps |
 | 4 | <img src="assets/what_you_need_4.jpg" alt="Male-male jumper cables" width="120"> | [Male-male jumper cables](#4-male-male-jumper-cables) | 2 wires |
 | 5 | <img src="assets/what_you_need_5.jpg" alt="Female-male jumper cables" width="120"> | [Female-male jumper cables](#5-female-male-jumper-cables) | 4 wires |
