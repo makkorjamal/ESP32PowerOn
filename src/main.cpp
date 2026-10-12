@@ -36,7 +36,7 @@ String strongestName = "Unknown";
 int scanTime = 1;
 int strongestRSSI = -100;
 
-const char* MACAddress = "a0:ad:9f:a3:5f:10";
+const char* MACAddress = "AA:BB:CC:DD:EE:FF";
 const int      SCAN_TIME_S        = 3;       // BLE scan length
 const uint32_t WAKE_TIMEOUT       = 60000;   // give up waiting for the PC's "on" message
 const uint32_t COOLDOWN_AFTER_OFF = 2000;   // ignore controller right after shutdown

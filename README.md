@@ -9,7 +9,7 @@
 An ESP32 (XIAO ESP32-S3) listens for a button press from an Xbox or Steam controller, then presses your PC's power button through an optocoupler, or wakes it with Wake-on-LAN. Everything is chosen in a setup page served by the ESP32 itself.
 
 
-[Features](#features) • [How it works](#how-it-works) • [Controllers](#supported-controllers) • [What you need](#what-you-need) • [Wiring](#wiring) • [Setup](#setup) • 
+[Demo](#demo) [Features](#features) • [How it works](#how-it-works) • [Controllers](#supported-controllers) • [What you need](#what-you-need) • [Wiring](#wiring) • [Setup](#setup) • 
 
 </div>
 
@@ -19,6 +19,8 @@ An ESP32 (XIAO ESP32-S3) listens for a button press from an Xbox or Steam contro
 
 **The power button is too far away**
 
+## Demo
+todo
 ## Features
 
 | Feature | Description |
@@ -77,8 +79,8 @@ I only tested this on the controller I own, which is an Xbox One controller on a
 | 1 | <img src="assets/what_you_need_1.png" alt="XIAO ESP32-S3 board with pin labels" width="120"> | XIAO ESP32-S3 | 1 piece with antenna attached |
 | 2 | <img src="assets/what_you_need_3.jpg" alt="USB-C to 9-pin motherboard USB header adapter" width="120"> | USB-C to 9-pin motherboard adapter | 1 piece |
 | 3 | <img src="assets/what_you_need_2.jpg" alt="PC817 optocoupler pinout" width="120"> | Optocoupler PC817 | 1 piece with soldered claps |
-| 4 | <img src="assets/what_you_need_4.jpg" alt="Male-male jumper cables" width="120"> | Male-male jumper cables | 2 wires |
-| 5 | <img src="assets/what_you_need_5.jpg" alt="Female-male jumper cables" width="120"> | Female-male jumper cables | 4 wires |
+| 4 | <img src="assets/what_you_need_4.jpg" alt="Male-male jumper cables" width="120"> | Male-male jumper cables | 4 wires |
+| 5 | <img src="assets/what_you_need_5.jpg" alt="Female-male jumper cables" width="120"> | Female-male jumper cables | 2 wires |
 
 - ⚠️ Checkout the assets folder
 
