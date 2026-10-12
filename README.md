@@ -9,7 +9,7 @@
 An ESP32 (XIAO ESP32-S3) listens for a button press from an Xbox or Steam controller, then presses your PC's power button through an optocoupler, or wakes it with Wake-on-LAN. Everything is chosen in a setup page served by the ESP32 itself.
 
 
-[Features](#-features) • [How it works](#-how-it-works) • [Controllers](#-supported-controllers) • [What you need](#-what-you-need) • [Wiring](#-wiring) • [Setup](#-setup) • 
+[Features](#features) • [How it works](#how-it-works) • [Controllers](#supported-controllers) • [What you need](#what-you-need) • [Wiring](#wiring) • [Setup](#setup) • 
 
 </div>
 
