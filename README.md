@@ -20,7 +20,9 @@ An ESP32 (XIAO ESP32-S3) listens for a button press from an Xbox or Steam contro
 **The power button is too far away**
 
 ## Demo
-todo
+
+https://github.com/user-attachments/assets/9c8c6f43-caae-48ac-8104-ebd3dd8fac3f
+
 ## Features
 
 | Feature | Description |
